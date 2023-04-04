@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Michael(1).png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Development Student</p>
+            <h1>Hi, I'm <span>Michael</span><br>Naert from<br>Chandler, Arizona</h1>
+        </div>
+    </div>
+</div>
+<!------about-----> 
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Finn pic.jpg">
+        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I began my professional tenure as an Infantryman in the Iowa Army National Guard. I then moved to 
+                    Chandler, AZ where I began working for Amazon in May of
+                     2022 as a Transportation Specialist (L3). Alongside Amazon, I serve as a 2nd Lieutenant in the 
+                     Arizona Army National Guard, in the Medical Service Corps branch. I currently hold a Bachelor's of
+                     Science in Kinesiology & Health: Exercise Science; and am a current Web Development student at
+                     Full Stack Academy. Outside of work I love to exercise, golf, hike, and walk with my dog, Finn.</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Developer</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Transportation Specialist (L3) at Amazon Inc.</li>
+                            <li><span>2023- Current</span><br>Web Development Student</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>B.S. Kinesiology & Health: Exercise Science at Iowa State University</li>
+                            <li><span>Graduation Date: Oct. 6, 2023</span><br>Web Development at Full Stack Academy</li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/placeimg_1.jpg">
+                <div class="layer">
+                    <h3>The First Project</h3>
+                    <p>The fjdke kdkdkdkd sdlslsk dkslslsl dhgkdfhfdk. Fjfjflal jlajdlfj  aljfldkjf aldjldjkfjjf aldjfj 
+                        aldjfa. Tjdkjfdjf lajkjdknd lajljlkajdlj lkajdlkjakajlkdj alkajs kajdkek kajdk. Hehkdhkajlj ahdlkjas
+                        kasjfkljadjflaj lajdljadj lasjlkjasdjf lkajsdflkjasdljf adlkjalsjfdl. Tlajljalj lkajfaljld lajaldj.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/placeimg_2.jpg">
+                <div class="layer">
+                    <h3>The Second Project</h3>
+                    <p>The fjdke kdkdkdkd sdlslsk dkslslsl dhgkdfhfdk. Fjfjflal jlajdlfj  aljfldkjf aldjldjkfjjf aldjfj 
+                        aldjfa. Tjdkjfdjf lajkjdknd lajljlkajdlj lkajdlkjakajlkdj alkajs kajdkek kajdk. Hehkdhkajlj ahdlkjas
+                        kasjfkljadjflaj lajdljadj lasjlkjasdjf lkajsdflkjasdljf adlkjalsjfdl. Tlajljalj lkajfaljld lajaldj.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/placeimg_3.jpg">
+                <div class="layer">
+                    <h3>The Third Project</h3>
+                    <p>The fjdke kdkdkdkd sdlslsk dkslslsl dhgkdfhfdk. Fjfjflal jlajdlfj  aljfldkjf aldjldjkfjjf aldjfj 
+                        aldjfa. Tjdkjfdjf lajkjdknd lajljlkajdlj lkajdlkjakajlkdj alkajs kajdkek kajdk. Hehkdhkajlj ahdlkjas
+                        kasjfkljadjflaj lajdljadj lasjlkjasdjf lkajsdflkjasdljf adlkjalsjfdl. Tlajljalj lkajfaljld lajaldj.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");        
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");        
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script src="/script.js"></script>
+</body>
+
+</html> 
