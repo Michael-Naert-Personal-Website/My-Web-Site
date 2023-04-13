@@ -1,1 +1,1 @@
-alert('HelloWorld')
+alert('Welcome to the personal website of Michael Naert')

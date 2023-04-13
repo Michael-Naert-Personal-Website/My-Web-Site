@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/Wedding\ Pic\ Cropped\ 1.jpg);
+    background-image: url(Images/Wedding\ Pic\ Cropped\ 1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -36,7 +36,7 @@ nav{
 
 nav ul li{
     display: inline-block;
-    list_style: none;
+    list-style: none;
     margin: 10px 20px;
 }
 
@@ -172,4 +172,32 @@ nav ul li a:hover::after{
 .layer h3{
     margin-bottom: 20px;
 }
+/* --------contact me----------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
 
+}
+.contact-right form{
+    width: 100%;
+    }
+form input, form textarea{
+    width: 100%;
+    border:0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.submit-button{
+    font-size: 20pt;
+    padding: 15px;
+    }
